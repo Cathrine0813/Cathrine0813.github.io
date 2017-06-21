@@ -1,0 +1,119 @@
+/*详情*/
+section{
+	width: 1200px;
+	margin: 0 auto;/*居中*/
+}
+/*侧边栏*/
+section aside{
+	float: left;
+}
+section aside .head1{
+	width: 260px;
+	height: 60px;
+	background-color: #448aca;
+	color: #ffffff;
+	line-height: 60px;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+section aside .head1 span:nth-of-type(1){
+	font-size: 24px;
+	font-weight: 600;
+	font-family: "微软雅黑";
+}
+section aside .head1 span:nth-of-type(2){
+	font-size: 14px;
+	font-weight: 600;
+	margin-left: 12px;
+}
+section aside .list{
+	width: 260px;
+	height: 190px;
+	box-shadow: 1px 1px 5px #e7e7e7;
+}
+section aside .list ul{
+	width: 240px;
+	height: 183px;
+	margin: 0 auto;/*居中*/
+}
+section aside .list ul li{
+	width: 240px;
+	height: 60px;
+	border-bottom: 1px solid #f0f0f0;
+	line-height: 60px;
+}
+section aside .list ul li i{
+	width: 5px;
+	height: 5px;
+	display: inline-block;/*行内块元素可以共用一行*/
+	background-color: #333333;
+	transform: rotate(45deg);
+	margin: 0 20px 0 25px;
+}
+section aside .list ul li a{
+	color: #333333;
+}
+section aside .list ul li a:hover{
+	color: #006933;
+}
+/*内容*/
+section article{
+	float: right;
+}
+/*主体*/
+section article .head2{
+	width: 900px;
+	height: 127px;
+	line-height: 127px;
+}
+section article .head2 span:nth-of-type(1){
+	float: left;
+	font-size: 20px;
+	color: #666666;
+}
+section article .head2 span:nth-of-type(2){
+	float: right;
+	color: #666666;
+	/*margin-top: 15px;*/
+}
+section article .head2 span:nth-of-type(2) a{
+	color: #666666;
+}
+section article .line{
+	width: 900px;
+	height: 11px;
+	background-image: url(../img/line.png);/*默认重复*/
+}
+section article .in ul li{
+	width: 900px;
+	height: 68px;
+	line-height: 68px;
+	border-bottom: 2px dotted #cccccc;
+}
+section article .in ul li img{
+	display: inline-block;
+	margin-right: 8px;
+}
+section article .in ul li a span:nth-of-type(2){
+	float: right;
+}
+section article .page {
+	margin-top:30px ;
+	margin-bottom: 50px;
+	margin-left: 138px;
+}
+section article .page ul li{
+	float: left;
+	display: block;
+	padding: 12px 14px;
+	border: 2px solid #e5e5e5;
+	margin: 0 8px;
+}
+section article .page ul li:hover{
+	background-color: #006933;
+	color: #fff;
+}
+/*底部*/
+footer{
+	margin-top: 45px;
+}

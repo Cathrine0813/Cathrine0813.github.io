@@ -1,0 +1,148 @@
+/*详情*/
+section{
+	width: 1000px;
+	margin: 0 auto;/*居中*/
+}
+section article .head1{
+	/*width: 1000px;*/
+	height: 122px;
+	line-height: 122px;
+}
+section article .head1 span:nth-of-type(1){
+	float: left;
+	font-size: 26px;
+	font-weight: 700;
+	color: #666666;
+}
+section article .head1 span:nth-of-type(2){
+	float: right;
+	color: #666666;
+	margin-top: 15px;
+}
+section article .head1 span:nth-of-type(2) a{
+	color: #666666;
+}
+section article .line1{
+	width: 1000px;
+	height: 11px;
+	background-image: url(../img/line.png);/*默认重复*/
+}
+.content{
+	width: 900px;
+	margin: 0 auto;
+}
+.content h2{
+	height: 85px;
+	line-height: 85px;
+}
+.content h2 i{
+	width: 20px;
+	height: 20px;
+	display: inline-block;/*转为行内块元素*/
+	background-image: url(../img/point.png);
+	margin-right: 14px;
+}
+.content h2 a{
+	font-size: 24px;
+	color: #666666;
+}
+/*内容1*/
+.content1 table{
+	width: 900px;
+	height: 750px;
+	border-collapse: collapse;/*边框合并*/
+}
+.content1 table tr td{
+	border: 2px solid #F0F0F0;
+	box-sizing: border-box;
+}
+.content1 table tr td:nth-of-type(1){
+	width: 200px;
+	height: 150px;
+	text-align: center;
+}
+.content1 table tr td:nth-of-type(2){
+	color: #333333;
+}
+/*精灵图*/
+.content1 table tr td:nth-of-type(1) i{
+	width: 54px;
+	height: 50px;
+	display: inline-block;
+	background-image: url(../img/sprites2.png);
+}
+.content1 table tr:nth-of-type(1) td:nth-of-type(1) i{
+	background-position: 0 0;
+}
+.content1 table tr:nth-of-type(2) td:nth-of-type(1) i{
+	background-position: 0 -50px;
+}
+.content1 table tr:nth-of-type(3) td:nth-of-type(1) i{
+	background-position: 0 -100px;
+}
+.content1 table tr:nth-of-type(4) td:nth-of-type(1) i{
+	background-position: 0 -200px;
+}
+/*设置文字*/
+.content1 table tr td:nth-of-type(1) a{
+	color: #1b1b1b;
+	font-weight: 600;
+}
+/*背景色*/
+.content1 table tr:nth-of-type(2n+1) td:nth-of-type(1){
+	background-color: #f0f0f0;
+}
+.content1 table tr:nth-of-type(2n) td:nth-of-type(2){
+	background-color: #f0f0f0;
+}
+.content1 table tr td:nth-of-type(2) ol{
+	margin-left: 67px;
+	line-height: 30px;/*对ol设置*/
+}
+/*内容2*/
+.content2 ol{
+	width: 500px;
+	height: 205px;
+	line-height: 30px;
+	padding-top: 15px;
+	padding-left: 65px;
+	box-sizing: border-box;
+	box-shadow: 0 0 10px #e3e3e3;
+	color: #333333;
+}
+/*内容3*/
+.content3 span{
+	width: 500px;
+	height: 55px;
+	display: block;
+	line-height: 55px;
+	padding-left: 50px;
+	box-sizing: border-box;
+	box-shadow: 0 0 10px #e3e3e3;
+	color: #333333;
+}
+/*内容4*/
+.content4{
+	position: relative;
+}
+.content4 img{
+	position: absolute;
+	top: -350px;
+	left: 660px;
+}
+.content4 p{
+	width: 240px;
+	height: 143px;
+	line-height: 30px;
+	text-align: center;
+	color: #666666;
+	padding-top: 16px;
+	box-sizing: border-box;
+	position: absolute;
+	top: -110px;
+	left: 660px;
+}
+/*底部*/
+footer{
+	margin-top: 85px;
+}

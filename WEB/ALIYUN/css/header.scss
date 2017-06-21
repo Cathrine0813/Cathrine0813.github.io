@@ -1,0 +1,406 @@
+@charset "UTF-8";
+
+header{
+    display: block;
+    width: 100%;
+    height: 690px;
+    color: #fff;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    background-color: #24282c;
+    position: relative;
+    .top-bar,.banner-bar,.bottom-bar{
+        width: 100%;
+        position: absolute;
+    }
+    .top-bar-content,.banner-bar-content,.bottom-bar-content{
+        width:100%;
+        margin: 0 auto;
+    }
+    a{
+        color: #fff;
+        font-size: 14px;
+        font-family: "微软雅黑";
+    }
+    .top-bar{
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        transition: 0.4s;
+        top: 0;
+        z-index: 9;
+        .top-bar-content{
+            height: 60px;
+            .logo{
+                width: 96px;
+                height: 60px;
+                display: block;
+                margin: 0 50px 0 20px;
+                position: relative;
+                float: left;
+                img{
+                    width: 96px;
+                    height: 23px;
+                    margin: 19px 0 18px 0;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+            nav{
+                width: 652px;
+                height: 61px;
+                float: left;
+                ul{
+                    position: relative;
+                    li{
+                        float: left;
+                        height: 60px;
+                        line-height: 60px;
+                        text-align: center;
+                        a{
+                            padding: 0 16px;
+                        }
+                    }
+                    .nav-underline{
+                        width: 0px;//获取li的width 
+                        height: 2px;
+                        display: block;
+                        background-color: #28d0e9;
+                        position: absolute;
+                        top: 59px;
+                        transition: 0.2s;
+                    }
+                }
+            }
+            
+            .language{
+                float: right;
+                position: relative;
+                .switch{
+                    height: 60px;
+                    padding: 0 12px;
+                    line-height: 60px;
+                    position: relative;
+                    float: left;
+                    i{
+                        width: 20px;
+                        height: 20px;
+                        display: block;  
+                        float: left;
+                        margin: 20px 5px 0 0;
+                        background-image: url(../img/aliyun/topicon1.png);
+                        background-size: cover;
+                    }
+                    img{
+                        width: 16px;
+                        height: 16px;
+                        float: right;
+                        margin: 24px 0 0 5px;
+                        transition: 0.2s;
+                    }
+                //问题：蒙版用不了
+                    ul{
+                        position: absolute;
+                        top: 60px;
+                        left: 0;
+                        width: 130px;
+                        padding: 10px;
+                        line-height: 30px;
+                        display: none;
+                        background-color: #373d41;
+                        li{
+                            height: 30px;
+                        }
+                        li:hover a{
+                            color: #00a2ca;
+                        }
+                    }
+                }
+                .switch:hover{
+                    background-color: #24282c;
+                }
+                .switch:hover img{
+                    transform: rotateZ(-180deg);
+                }
+                .switch:hover ul{
+                   display: block; 
+                }
+                
+                .search{
+                    float: left;
+                    margin: 22px 10px 0 5px;
+                    a{
+                        width: 16px;
+                        height: 16px;
+                        display: block;
+                        background-image: url(../img/aliyun/topicon3.png);
+                        background-size: cover;
+                    }
+                }
+                
+            }
+            
+            .login-bar{
+                float: right;
+                .tips-box{
+                    width: 164px;
+                    height: 60px;  
+                    li{
+                        float: right;
+                        margin-right: 22px;
+                        line-height: 60px;
+                        a{
+                            transition: 0.2s;
+                        }
+                        a:hover{
+                            color: #00a2ca;
+                        }
+                    }
+                }
+            }
+            
+            .register{
+                float: right;
+                a{
+                    width: 130px;
+                    height: 61px;
+                    line-height: 60px;
+                    text-align: center;
+                    display: block;
+                    background-color: #00c1de;  
+                    transition: 0.2s;
+                }
+                a:hover{
+                    background-color: #28d0e9;  
+                }
+            }
+            
+        }
+    }
+    .top-bar:hover{
+        background-color: #373d41;
+        //蒙版
+//      filter:Alpha(Opacity=90);
+//      opacity:0.9;
+    }
+    
+    .banner-bar{
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 690px;
+        overflow: hidden;
+        .banner-bar-content{
+            position: relative;
+            .banner-image{
+                position: relative;
+                li{
+                    transition: 1s;
+                    transform: translateY(50px);
+                }
+                .banner-style1{
+                    position: absolute;
+                    opacity: 0;
+                    .banner-image-detail{
+                        a{
+                            img{
+                                width: 1349px;
+                                height: 690px;
+                            }
+                        }
+                    }
+                }
+                .banner-style2{
+                    position: absolute;
+                    width: 100%;
+                    height: 690px;
+                    opacity: 0;
+                    .banner-image-content{
+                        position: absolute;
+                        top: 150px;
+                        left: 75px;
+                        z-index: 3;
+                        a{
+                            width: 670px;
+                            height: 320px;
+                            display: block;
+                            span{
+                                width: 114px;
+                                height: 24px;
+                                display: block;
+                                background-color: rgba(255,255,255,0.4);
+                                text-align: center;
+                                line-height: 24px;
+                            }
+                            h1{
+                                font-size: 44px;
+                                font-weight: 400;
+                            }
+                            p{
+                                font-size: 20px;
+                                line-height: 50px;
+                            }
+                            p:nth-of-type(2){
+                                display: block;
+                                font-size: 16px;
+                                margin-top: 30px;
+                            }
+                            button{
+                                outline: none;
+                                color: #fff;
+                                border: 1px solid #fff;
+                                font-size: 16px ;
+                                width: 118px;
+                                height: 34px;
+                                background: transparent;
+                                margin-top: 30px;
+                                transition: 0.3s;
+                                cursor: s-resize;
+                            }
+                            button:hover{
+                                background-color: #fff;
+                                color: rgba(0,0,0,1); 
+                            }
+                        }
+                    }
+                    
+                    .banner-image-detail{
+                        a{
+                            position: absolute;
+                            img{
+                                width: 1349px;
+                                height: 690px;
+                            }
+                        }
+                    }
+                }
+                
+                .banner-style3{
+                    position: absolute;
+                    opacity: 0;
+                    .banner-image-content{
+                        position: absolute;
+                        top: 150px;
+                        left: 75px;
+                        a{
+                            width: 670px;
+                            height: 320px;
+                            display: block;
+                            h1{
+                                font-size: 44px;
+                                font-weight: 400;
+                            }
+                            p{
+                                font-size: 20px;
+                                line-height: 50px;
+                            }
+                            button{
+                                outline: none;
+                                color: #fff;
+                                border: 1px solid #fff;
+                                font-size: 16px ;
+                                width: 118px;
+                                height: 34px;
+                                background: transparent;
+                                margin-top: 30px;
+                                transition: 0.3s;
+                            }
+                            button:hover{
+                                background-color: #fff;
+                                color: rgba(0,0,0,1);
+                            }
+                        }
+                    }
+                    .banner-image-detail{
+                        a{
+                            position: absolute;
+                            img{
+                                position: absolute;
+                                top: 61px;
+                                left: 550px;
+                                width: 800px;
+                                height: 440px;
+                                transition: 0.8s;
+                            }
+                        }  
+                    }
+                }
+            }
+            .banner-point{
+                position: absolute;
+                top: 527px;
+                left: 50%;
+                margin-left: -38px;//用js获取
+                z-index: 4;
+                dd{
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    float: left;
+                    margin: 0 5px;
+                    cursor: pointer;
+                    border: 1px solid rgba(255,255,255,0.2);
+                    transition: 0.3s;
+                    canvas{
+                        transform: rotateZ(90deg) rotateY(180deg);
+                    }
+                }
+            }
+        } 
+    }
+    
+    .bottom-bar{
+        top: 560px;
+        z-index: 9;
+        background-color: rgba(255,255,255,0.05);
+        .bottom-bar-content{
+            height: 130px;
+            ul{
+                width: 1200px;
+                height: 130px;
+                margin: 0 auto;
+                border-right: 1px solid rgba(255,255,255,0.1);
+                li{
+                    border-left: 1px solid rgba(255,255,255,0.1);
+                    float: left;
+                    a{
+                        width: 239px;
+                        height: 130px;
+                        display: block;
+                        position: relative;
+                        transition: 0.4s;
+                        img{
+                            position: absolute;
+                            left: 20px;
+                            top: 42px;
+                            width: 32px;
+                        }
+                        h2{
+                            height: 18px;
+                            font-size: 16px;
+                            position: absolute;
+                            left: 69px;
+                            top: 42px;
+                        }
+                        p{
+                            font-size: 14px;
+                            line-height: 14px;
+                            color: rgba(255,255,255,0.5);
+                            position: absolute;
+                            left: 69px;
+                            top: 74px;
+                        }
+                    } 
+                    a:hover{
+                        background-color: rgba(255,255,255,0.1);
+                    } 
+                    a:hover p{
+                        color: rgba(255,255,255,1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+

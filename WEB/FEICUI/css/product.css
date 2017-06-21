@@ -1,0 +1,128 @@
+/*详情*/
+section{
+	width: 1200px;
+	margin: 0 auto;/*居中*/
+}
+/*侧边栏*/
+section aside{
+	float: left;
+}
+section aside .head1{
+	width: 260px;
+	height: 60px;
+	background-color: #448aca;
+	color: #ffffff;
+	line-height: 60px;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+section aside .head1 span:nth-of-type(1){
+	font-size: 24px;
+	font-weight: 600;
+	font-family: "微软雅黑" /*sans-serif*/;/*非衬线字体*/
+}
+section aside .head1 span:nth-of-type(2){
+	font-size: 14px;
+	font-weight: 600;
+	margin-left: 12px;
+}
+section aside .list{
+	width: 260px;
+	height: 190px;
+	box-shadow: 1px 1px 5px #e7e7e7;
+}
+section aside .list ul{
+	width: 240px;
+	height: 183px;
+	margin: 0 auto;
+}
+section aside .list ul li{
+	width: 240px;
+	height: 60px;
+	border-bottom: 1px solid #f0f0f0;
+	line-height: 60px;
+}
+section aside .list ul li i{
+	width: 5px;
+	height: 5px;
+	display: inline-block;/*行内块元素可以共用一行*/
+	background-color: #333333;
+	transform: rotate(45deg);
+	margin: 0 20px 0 25px;
+}
+section aside .list ul li a{
+	color: #333333;
+}
+section aside .list ul li a:hover{
+	color: #006933;
+}
+
+/*内容*/
+section article{
+	float: right;
+}
+/*主体*/
+section article .head2{
+	width: 900px;
+	height: 127px;
+	line-height: 127px;
+}
+section article .head2 span:nth-of-type(1){
+	float: left;
+	font-size: 20px;
+	color: #666666;
+}
+section article .head2 span:nth-of-type(2){
+	float: right;
+	color: #666666;
+	/*margin-top: 15px;*/
+}
+section article .head2 span:nth-of-type(2) a{
+	color: #666666;
+}
+
+section article .line{
+	width: 900px;
+	height: 11px;
+	background-image: url(../img/line.png);/*默认重复*/
+}
+
+section article .image{
+	width: 900px;
+}
+section article .image ul{
+	width: 768px;
+	height: 1628px;
+	margin-left: 20px;
+}
+section article .image ul li{
+	width: 344px;
+	height: 223px;
+	float: left;
+	margin-top: 30px;
+	margin-right: 40px;
+}
+section article .image ul li a img{
+	width: 344px;
+	height: 183px;
+}
+section article .image ul li a span{
+	width: 344px;
+	height: 40px;
+	display: block;/*span是行内元素，要转为块元素*/
+	line-height: 40px;
+	text-align: center;
+	background-color: #f0f0f0;
+	transition: all 0.5s ease;
+}
+section article .image ul li:hover span{
+	width: 344px;
+	height: 183px;
+	background-color: rgba(85,81,80,0.5);
+	line-height: 183px;
+	color: #FFFFFF;
+	font-size: 20px;
+	margin-top: -183px;
+	position: relative;
+}
+

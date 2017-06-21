@@ -1,0 +1,531 @@
+@charset "UTF-8";
+@keyframes move1 {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 0.5; }
+  50% {
+    opacity: 1; }
+  100% {
+    width: 80px;
+    height: 80px;
+    opacity: 0; } }
+@keyframes move2 {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 0.5; }
+  50% {
+    opacity: 1; }
+  100% {
+    width: 100px;
+    height: 100px;
+    opacity: 0; } }
+@keyframes move3 {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 0.5; }
+  50% {
+    opacity: 1; }
+  100% {
+    width: 110px;
+    height: 110px;
+    opacity: 0; } }
+@keyframes move4 {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 0.5; }
+  50% {
+    opacity: 1; }
+  100% {
+    width: 150px;
+    height: 150px;
+    opacity: 0; } }
+@keyframes move5 {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 0.5; }
+  50% {
+    opacity: 1; }
+  100% {
+    width: 200px;
+    height: 200px;
+    opacity: 0; } }
+section {
+  font-family: "微软雅黑"; }
+  section .part1 {
+    text-align: center; }
+    section .part1 .ali-product-logo {
+      display: block;
+      width: 90px;
+      margin: 32px auto 24px; }
+    section .part1 .ali-product-title {
+      font-size: 24px;
+      color: #373d41;
+      line-height: 36px; }
+    section .part1 .ali-product-sub-title {
+      font-size: 16px;
+      margin: 8px 0 42px;
+      display: block;
+      color: #373d41;
+      transition: 0.3s; }
+    section .part1 .ali-product-sub-title:hover {
+      color: #00c1de; }
+    section .part1 .ali-product-layer .ali-product-tabs {
+      width: 1200px;
+      height: 131px;
+      margin: 0 auto;
+      position: relative; }
+      section .part1 .ali-product-layer .ali-product-tabs .ali-product-tab {
+        width: 156px;
+        height: 101px;
+        padding: 15px 39px;
+        float: left; }
+        section .part1 .ali-product-layer .ali-product-tabs .ali-product-tab a {
+          width: 156px;
+          height: 101px;
+          display: block; }
+          section .part1 .ali-product-layer .ali-product-tabs .ali-product-tab a .ali-product-icon {
+            width: 80px;
+            height: 80px;
+            display: block;
+            margin: 0 auto;
+            background-size: contain; }
+          section .part1 .ali-product-layer .ali-product-tabs .ali-product-tab a .ali-product-name {
+            font-size: 14px;
+            transition: 0.3s; }
+          section .part1 .ali-product-layer .ali-product-tabs .ali-product-tab a .name-active {
+            color: #00c1de; }
+      section .part1 .ali-product-layer .ali-product-tabs .indicator-triangle {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 8px solid #f5f5f6;
+        position: absolute;
+        bottom: 0;
+        left: 107px;
+        display: none; }
+    section .part1 .ali-product-show-more {
+      width: 120px;
+      height: 36px;
+      line-height: 36px;
+      margin: 35px auto 40px;
+      text-align: center;
+      font-size: 14px;
+      color: #373d41;
+      border: 1px solid #373d41;
+      cursor: pointer;
+      transition: 0.2s; }
+    section .part1 .ali-product-show-more:hover {
+      color: #00c1de;
+      border: 1px solid #00c1de; }
+  section .part2 {
+    width: 1349px;
+    height: 393px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden; }
+    section .part2 .part2-left, section .part2 .part2-right {
+      width: 50px;
+      height: 393px;
+      background-color: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      line-height: 393px;
+      position: absolute;
+      top: 0;
+      z-index: 9;
+      font-size: 26px;
+      color: #fff;
+      cursor: pointer;
+      opacity: 0;
+      transition: 0.3s; }
+      section .part2 .part2-left img, section .part2 .part2-right img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto; }
+    section .part2 .part2-left {
+      left: 0; }
+    section .part2 .part2-right {
+      right: 0; }
+    section .part2 .part2-content {
+      width: 1350px;
+      height: 393px;
+      position: relative;
+      overflow: hidden; }
+      section .part2 .part2-content .part2-det {
+        height: 393px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.3s; }
+        section .part2 .part2-content .part2-det li {
+          width: 270px;
+          height: 393px;
+          background-size: cover;
+          float: left; }
+          section .part2 .part2-content .part2-det li a {
+            color: #fff;
+            width: 270px;
+            height: 393px;
+            display: block;
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: 0.3s;
+            text-align: center;
+            padding-top: 100px;
+            box-sizing: border-box; }
+            section .part2 .part2-content .part2-det li a .part2-icon {
+              width: 66px;
+              height: 68px;
+              display: inline-block;
+              transition: 0.3s;
+              background-size: cover; }
+            section .part2 .part2-content .part2-det li a .part2-line {
+              width: 30px;
+              height: 2px;
+              background: #fff;
+              display: inline-block;
+              opacity: 1;
+              transition: 0.3s; }
+            section .part2 .part2-content .part2-det li a .part2-title {
+              font-size: 22px;
+              line-height: 24px;
+              margin: 0;
+              padding: 0;
+              margin-top: 24px;
+              font-weight: bold;
+              transition: 0.3s; }
+            section .part2 .part2-content .part2-det li a .part2-con {
+              margin-top: 30px;
+              padding: 0px 23px;
+              line-height: 24px;
+              height: 72px;
+              opacity: 0;
+              transition: 0.3s; }
+            section .part2 .part2-content .part2-det li a .part2-btn {
+              display: inline-block;
+              border: 1px solid #fff;
+              width: 120px;
+              height: 36px;
+              line-height: 36px;
+              font-size: 14px;
+              margin-top: 62px;
+              opacity: 0;
+              transition: 0.3s; }
+  section .part2:hover .part2-left, section .part2:hover .part2-right {
+    opacity: 0.7; }
+  section .part3 {
+    width: 100%;
+    margin-top: 76px;
+    margin-bottom: 76px; }
+    section .part3 .part3-main-head {
+      width: 1200px;
+      height: 72px;
+      margin: 0 auto;
+      margin-bottom: 67px;
+      text-align: center; }
+      section .part3 .part3-main-head h1 {
+        font-size: 24px;
+        color: #373d41;
+        font-weight: 500; }
+      section .part3 .part3-main-head a {
+        display: block;
+        margin-top: 12px;
+        font-size: 16px;
+        color: #5f6367;
+        transition: 0.3s; }
+      section .part3 .part3-main-head a:hover {
+        color: #00c1de; }
+    section .part3 .part3-content .part3-product {
+      width: 33.3%;
+      text-align: center;
+      height: 200px;
+      margin: 10px auto;
+      float: left; }
+      section .part3 .part3-content .part3-product .part3-title {
+        width: 100px;
+        height: 115px;
+        display: block;
+        text-decoration: none;
+        margin: 0 auto;
+        width: 100px; }
+        section .part3 .part3-content .part3-product .part3-title .part3-product-img {
+          height: 75px;
+          width: 75px;
+          background-position: 0px 0px;
+          background-size: 75px;
+          margin: 0 auto;
+          position: relative; }
+        section .part3 .part3-content .part3-product .part3-title .part3-product-title {
+          font-size: 20px;
+          color: #373d41;
+          margin-top: 10px;
+          font-weight: 700;
+          transition: 0.3s; }
+      section .part3 .part3-content .part3-product .part3-title:hover .part3-product-title {
+        color: #00c1de; }
+      section .part3 .part3-content .part3-product .part3-product-detail {
+        width: 100%;
+        height: 52px;
+        padding-top: 10px;
+        margin: 0 auto;
+        text-align: center; }
+        section .part3 .part3-content .part3-product .part3-product-detail .appendix-list {
+          display: inline-block;
+          padding: 0;
+          font-size: 14px;
+          position: relative; }
+          section .part3 .part3-content .part3-product .part3-product-detail .appendix-list a {
+            color: #a9b0b4;
+            transition: 0.2s; }
+          section .part3 .part3-content .part3-product .part3-product-detail .appendix-list a:hover {
+            color: #00c1de; }
+  section .part4 {
+    width: 100%;
+    height: 446px;
+    padding: 80px 0;
+    background-color: #f5f5f5; }
+    section .part4 .part4-main-head {
+      width: 1200px;
+      height: 72px;
+      margin: 0 auto;
+      margin-bottom: 67px;
+      text-align: center; }
+      section .part4 .part4-main-head h1 {
+        font-size: 24px;
+        color: #373d41;
+        font-weight: 500; }
+      section .part4 .part4-main-head a {
+        display: block;
+        margin-top: 12px;
+        font-size: 16px;
+        color: #5f6367;
+        transition: 0.3s; }
+      section .part4 .part4-main-head a:hover {
+        color: #00c1de; }
+    section .part4 .part4-content {
+      width: 1200px;
+      height: 306px;
+      margin: 0 auto; }
+      section .part4 .part4-content .part4-content-item {
+        float: left;
+        width: 400px;
+        padding: 0 10px;
+        box-sizing: border-box;
+        font-size: 14px; }
+        section .part4 .part4-content .part4-content-item .part4-title .item-box {
+          height: 230px;
+          background-color: #fff;
+          border: 1px solid #c5d8db;
+          box-sizing: border-box;
+          margin-bottom: 20px;
+          transition: 0.5s; }
+          section .part4 .part4-content .part4-content-item .part4-title .item-box .img-area {
+            width: 100%;
+            overflow: hidden;
+            height: 170px; }
+            section .part4 .part4-content .part4-content-item .part4-title .item-box .img-area img {
+              width: 100%;
+              transition: 0.5s; }
+          section .part4 .part4-content .part4-content-item .part4-title .item-box .box-header {
+            padding: 18px 25px;
+            color: #373d41; }
+        section .part4 .part4-content .part4-content-item .part4-title:hover .item-box {
+          box-shadow: 0 0 5px grey; }
+          section .part4 .part4-content .part4-content-item .part4-title:hover .item-box .img-area img {
+            transform: scale(1.2); }
+        section .part4 .part4-content .part4-content-item .item-appendix ul {
+          line-height: 28px; }
+          section .part4 .part4-content .part4-content-item .item-appendix ul li a {
+            color: #373d41;
+            transition: 0.3s; }
+          section .part4 .part4-content .part4-content-item .item-appendix ul li:hover a {
+            color: #00c1de; }
+  section .part5 .part5-header {
+    width: 100%;
+    height: 100px;
+    background-color: #00C1DE;
+    text-align: center;
+    line-height: 100px;
+    position: relative; }
+    section .part5 .part5-header a {
+      font-size: 24px;
+      color: #fff; }
+    section .part5 .part5-header .ali-main-defence {
+      opacity: 0.5;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat; }
+  section .part5 .part5-content1 {
+    width: 100%;
+    height: 778px;
+    padding-top: 80px; }
+    section .part5 .part5-content1 .ali-main-serve-head {
+      text-align: center;
+      height: 72px;
+      margin-bottom: 60px; }
+      section .part5 .part5-content1 .ali-main-serve-head h1 {
+        font-size: 24px;
+        color: #373d41;
+        font-weight: 500;
+        line-height: 36px; }
+      section .part5 .part5-content1 .ali-main-serve-head a {
+        margin-top: 12px;
+        display: inline-block;
+        font-size: 16px;
+        color: #5f6367;
+        transition: 0.3s; }
+      section .part5 .part5-content1 .ali-main-serve-head a:hover {
+        color: #00c1de; }
+    section .part5 .part5-content1 .map-img {
+      width: 1200px;
+      height: 546px;
+      margin: 0 auto;
+      position: relative; }
+      section .part5 .part5-content1 .map-img img {
+        width: 100%; }
+      section .part5 .part5-content1 .map-img .point {
+        position: absolute; }
+        section .part5 .part5-content1 .map-img .point .point-center {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: #6ad7e9;
+          border: 1px solid rgba(0, 205, 236, 0.37);
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          z-index: 4; }
+          section .part5 .part5-content1 .map-img .point .point-center .point-name {
+            height: 20px;
+            width: 50px;
+            position: absolute;
+            right: -55px;
+            top: -5px;
+            font-size: 12px;
+            color: #333; }
+        section .part5 .part5-content1 .map-img .point .point-circle {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          border: 1px solid #6ad7e9;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          z-index: 2; }
+        section .part5 .part5-content1 .map-img .point .point-circle3 {
+          background-image: radial-gradient(rgba(0, 205, 236, 0.02), rgba(0, 205, 236, 0.1)); }
+    section .part5 .part5-content1 .main-bar {
+      width: 1200px;
+      height: 50px;
+      margin: 0 auto;
+      padding: 0 120px;
+      box-sizing: border-box; }
+      section .part5 .part5-content1 .main-bar dd {
+        width: 220px;
+        height: 50px;
+        padding: 0 10px;
+        float: left; }
+        section .part5 .part5-content1 .main-bar dd a img {
+          width: 50px;
+          height: 50px;
+          float: left; }
+        section .part5 .part5-content1 .main-bar dd a p {
+          float: left;
+          line-height: 50px;
+          color: #373d41;
+          font-size: 12px;
+          padding-left: 10px; }
+  section .part5 .part5-content2 {
+    width: 100%;
+    height: 287px;
+    padding-top: 80px; }
+    section .part5 .part5-content2 .part5-content2-title {
+      text-align: center;
+      height: 72px;
+      margin-bottom: 12px; }
+      section .part5 .part5-content2 .part5-content2-title h1 {
+        font-size: 24px;
+        color: #373d41;
+        font-weight: 500;
+        line-height: 36px; }
+      section .part5 .part5-content2 .part5-content2-title a {
+        margin-top: 12px;
+        display: inline-block;
+        font-size: 16px;
+        color: #5f6367;
+        transition: 0.3s; }
+      section .part5 .part5-content2 .part5-content2-title a:hover {
+        color: #00c1de; }
+    section .part5 .part5-content2 .part5-content2-partner {
+      width: 1200px;
+      height: 203px;
+      margin: 0 auto; }
+      section .part5 .part5-content2 .part5-content2-partner dd {
+        width: 20%;
+        height: 203px;
+        float: left; }
+        section .part5 .part5-content2 .part5-content2-partner dd img {
+          margin: 0 auto;
+          height: 130px;
+          padding-top: 36.5px;
+          box-sizing: border-box; }
+  section .part5 .part5-footer {
+    width: 100%;
+    height: 200px;
+    background-color: #00c1de;
+    position: relative; }
+    section .part5 .part5-footer .part5-context {
+      position: absolute;
+      top: 56px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      color: #fff;
+      text-align: center; }
+      section .part5 .part5-footer .part5-context p {
+        font-size: 24px;
+        line-height: 31px;
+        margin-bottom: 17px; }
+      section .part5 .part5-footer .part5-context a button {
+        color: #fff;
+        background: transparent;
+        border: 1px solid #fff;
+        font-size: 16px;
+        line-height: 36px;
+        padding: 0 28px;
+        height: 36px;
+        outline: none;
+        transition: 0.2s; }
+      section .part5 .part5-footer .part5-context a:hover button {
+        color: #00c1de;
+        background-color: #fff; }
+    section .part5 .part5-footer .ali-main-register {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.4; }
+
+/*# sourceMappingURL=section.css.map */

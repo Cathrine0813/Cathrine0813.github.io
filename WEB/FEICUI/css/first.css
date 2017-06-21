@@ -1,0 +1,153 @@
+/*详情*/
+section{
+	width: 1200px;
+	margin: 14px auto 0;/*居中*/
+}
+section article div:nth-of-type(2){
+	line-height: 30px;
+}
+/*详情1*/
+section article:nth-of-type(1){
+	width: 325px;
+	height: 280px;
+	float: left;
+	margin-right: 110px;
+}
+section article .head1{
+	width: 325px;
+	height: 64px;
+	line-height: 64px;
+}
+section article .head1 span{
+	float: left;
+}
+section article .head1 span a{
+	font-weight:600 ;
+}
+section article .head1 i{
+	float: right;
+}
+section article .head1 a{
+	color: #006933;
+}
+section article .content1{
+	font-size: 14px;
+}
+/*详情2*/
+section article:nth-of-type(2){
+	width: 550px;
+	height: 280px;
+	float: left;
+	margin-right: 112px;
+}
+section article .head2{
+	width: 550px;
+	height: 64px;
+	line-height: 64px;
+}
+section article .head2 span{
+	float: left;
+}
+section article .head2 span a{
+	font-weight:600 ;
+}
+section article .head2 i{
+	float: right;
+}
+section article .head2 a{
+	color: #006933;
+}
+section article .content2{
+	font-size: 14px;
+}
+section article .content2 img{
+	display: inline-block;
+}
+section article .content2 time{
+	float: right;
+}
+/*详情3*/
+section article:nth-of-type(3){
+	width: 103px;
+	height: 280px;
+	float: left;
+}
+section article .head3{
+	width: 103px;
+	height: 64px;
+	line-height: 64px;
+	text-align: center;
+}
+section article .head3 a{
+	font-weight:600 ;
+	color: #006933;
+}
+section article .content3{
+	font-size: 14px;
+	text-align: center;
+}
+section article .content3 ul li a{
+	width: 98px;
+	display: block;
+	white-space: nowrap;/*设置单行溢出*/
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/*展示区域*/
+.product{
+	width: 1200px;
+	height: 268px;
+	margin: 18px auto 0;
+}
+.product .head4{
+	height: 38px;
+	line-height: 38px;
+}
+.product .head4 a{
+	color: #006933;
+}
+.product .head4 span a{
+	font-weight: 600;
+	float: left;
+}
+.product .head4 i a{
+	float: right;
+}
+.product .xg{
+	width: 340px;
+	height: 180px;
+	float: left;
+	background-size: 100%;
+	position: relative;
+	overflow: hidden;/*超出部分隐藏*/
+}
+.product .box1{
+	background-image: url(../img/home1.jpg);
+	margin-right: 90px;
+}
+.product .box2{
+	background-image: url(../img/home2.jpg);
+	margin-right: 90px;
+}
+.product .box3{
+	background-image: url(../img/home3.jpg);
+}
+.product .xg span{
+	display: block;
+	width: 340px;
+	height: 40px;
+	line-height: 40px;
+	background-color: rgba(0,0,0,0.5);
+	color: #FFFFFF;
+	font-size: 14px;
+	text-align: center;
+	bottom: -40px;
+	position: absolute;
+	transition: all 0.2s ease;
+}
+.product .xg:hover span{
+	/*font-size: 18px;*/
+	transform: translateY(-40px);
+	/*line-height: 180px;*/
+	
+}

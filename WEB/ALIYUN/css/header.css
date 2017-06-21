@@ -1,0 +1,310 @@
+@charset "UTF-8";
+header {
+  display: block;
+  width: 100%;
+  height: 690px;
+  color: #fff;
+  font-size: 14px;
+  font-family: "微软雅黑";
+  background-color: #24282c;
+  position: relative; }
+  header .top-bar, header .banner-bar, header .bottom-bar {
+    width: 100%;
+    position: absolute; }
+  header .top-bar-content, header .banner-bar-content, header .bottom-bar-content {
+    width: 100%;
+    margin: 0 auto; }
+  header a {
+    color: #fff;
+    font-size: 14px;
+    font-family: "微软雅黑"; }
+  header .top-bar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: 0.4s;
+    top: 0;
+    z-index: 9; }
+    header .top-bar .top-bar-content {
+      height: 60px; }
+      header .top-bar .top-bar-content .logo {
+        width: 96px;
+        height: 60px;
+        display: block;
+        margin: 0 50px 0 20px;
+        position: relative;
+        float: left; }
+        header .top-bar .top-bar-content .logo img {
+          width: 96px;
+          height: 23px;
+          margin: 19px 0 18px 0;
+          position: absolute;
+          top: 0;
+          left: 0; }
+      header .top-bar .top-bar-content nav {
+        width: 652px;
+        height: 61px;
+        float: left; }
+        header .top-bar .top-bar-content nav ul {
+          position: relative; }
+          header .top-bar .top-bar-content nav ul li {
+            float: left;
+            height: 60px;
+            line-height: 60px;
+            text-align: center; }
+            header .top-bar .top-bar-content nav ul li a {
+              padding: 0 16px; }
+          header .top-bar .top-bar-content nav ul .nav-underline {
+            width: 0px;
+            height: 2px;
+            display: block;
+            background-color: #28d0e9;
+            position: absolute;
+            top: 59px;
+            transition: 0.2s; }
+      header .top-bar .top-bar-content .language {
+        float: right;
+        position: relative; }
+        header .top-bar .top-bar-content .language .switch {
+          height: 60px;
+          padding: 0 12px;
+          line-height: 60px;
+          position: relative;
+          float: left; }
+          header .top-bar .top-bar-content .language .switch i {
+            width: 20px;
+            height: 20px;
+            display: block;
+            float: left;
+            margin: 20px 5px 0 0;
+            background-image: url(../img/aliyun/topicon1.png);
+            background-size: cover; }
+          header .top-bar .top-bar-content .language .switch img {
+            width: 16px;
+            height: 16px;
+            float: right;
+            margin: 24px 0 0 5px;
+            transition: 0.2s; }
+          header .top-bar .top-bar-content .language .switch ul {
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 130px;
+            padding: 10px;
+            line-height: 30px;
+            display: none;
+            background-color: #373d41; }
+            header .top-bar .top-bar-content .language .switch ul li {
+              height: 30px; }
+            header .top-bar .top-bar-content .language .switch ul li:hover a {
+              color: #00a2ca; }
+        header .top-bar .top-bar-content .language .switch:hover {
+          background-color: #24282c; }
+        header .top-bar .top-bar-content .language .switch:hover img {
+          transform: rotateZ(-180deg); }
+        header .top-bar .top-bar-content .language .switch:hover ul {
+          display: block; }
+        header .top-bar .top-bar-content .language .search {
+          float: left;
+          margin: 22px 10px 0 5px; }
+          header .top-bar .top-bar-content .language .search a {
+            width: 16px;
+            height: 16px;
+            display: block;
+            background-image: url(../img/aliyun/topicon3.png);
+            background-size: cover; }
+      header .top-bar .top-bar-content .login-bar {
+        float: right; }
+        header .top-bar .top-bar-content .login-bar .tips-box {
+          width: 164px;
+          height: 60px; }
+          header .top-bar .top-bar-content .login-bar .tips-box li {
+            float: right;
+            margin-right: 22px;
+            line-height: 60px; }
+            header .top-bar .top-bar-content .login-bar .tips-box li a {
+              transition: 0.2s; }
+            header .top-bar .top-bar-content .login-bar .tips-box li a:hover {
+              color: #00a2ca; }
+      header .top-bar .top-bar-content .register {
+        float: right; }
+        header .top-bar .top-bar-content .register a {
+          width: 130px;
+          height: 61px;
+          line-height: 60px;
+          text-align: center;
+          display: block;
+          background-color: #00c1de;
+          transition: 0.2s; }
+        header .top-bar .top-bar-content .register a:hover {
+          background-color: #28d0e9; }
+  header .top-bar:hover {
+    background-color: #373d41; }
+  header .banner-bar {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 690px;
+    overflow: hidden; }
+    header .banner-bar .banner-bar-content {
+      position: relative; }
+      header .banner-bar .banner-bar-content .banner-image {
+        position: relative; }
+        header .banner-bar .banner-bar-content .banner-image li {
+          transition: 1s;
+          transform: translateY(50px); }
+        header .banner-bar .banner-bar-content .banner-image .banner-style1 {
+          position: absolute;
+          opacity: 0; }
+          header .banner-bar .banner-bar-content .banner-image .banner-style1 .banner-image-detail a img {
+            width: 1349px;
+            height: 690px; }
+        header .banner-bar .banner-bar-content .banner-image .banner-style2 {
+          position: absolute;
+          width: 100%;
+          height: 690px;
+          opacity: 0; }
+          header .banner-bar .banner-bar-content .banner-image .banner-style2 .banner-image-content {
+            position: absolute;
+            top: 150px;
+            left: 75px;
+            z-index: 3; }
+            header .banner-bar .banner-bar-content .banner-image .banner-style2 .banner-image-content a {
+              width: 670px;
+              height: 320px;
+              display: block; }
+              header .banner-bar .banner-bar-content .banner-image .banner-style2 .banner-image-content a span {
+                width: 114px;
+                height: 24px;
+                display: block;
+                background-color: rgba(255, 255, 255, 0.4);
+                text-align: center;
+                line-height: 24px; }
+              header .banner-bar .banner-bar-content .banner-image .banner-style2 .banner-image-content a h1 {
+                font-size: 44px;
+                font-weight: 400; }
+              header .banner-bar .banner-bar-content .banner-image .banner-style2 .banner-image-content a p {
+                font-size: 20px;
+                line-height: 50px; }
+              header .banner-bar .banner-bar-content .banner-image .banner-style2 .banner-image-content a p:nth-of-type(2) {
+                display: block;
+                font-size: 16px;
+                margin-top: 30px; }
+              header .banner-bar .banner-bar-content .banner-image .banner-style2 .banner-image-content a button {
+                outline: none;
+                color: #fff;
+                border: 1px solid #fff;
+                font-size: 16px;
+                width: 118px;
+                height: 34px;
+                background: transparent;
+                margin-top: 30px;
+                transition: 0.3s;
+                cursor: s-resize; }
+              header .banner-bar .banner-bar-content .banner-image .banner-style2 .banner-image-content a button:hover {
+                background-color: #fff;
+                color: black; }
+          header .banner-bar .banner-bar-content .banner-image .banner-style2 .banner-image-detail a {
+            position: absolute; }
+            header .banner-bar .banner-bar-content .banner-image .banner-style2 .banner-image-detail a img {
+              width: 1349px;
+              height: 690px; }
+        header .banner-bar .banner-bar-content .banner-image .banner-style3 {
+          position: absolute;
+          opacity: 0; }
+          header .banner-bar .banner-bar-content .banner-image .banner-style3 .banner-image-content {
+            position: absolute;
+            top: 150px;
+            left: 75px; }
+            header .banner-bar .banner-bar-content .banner-image .banner-style3 .banner-image-content a {
+              width: 670px;
+              height: 320px;
+              display: block; }
+              header .banner-bar .banner-bar-content .banner-image .banner-style3 .banner-image-content a h1 {
+                font-size: 44px;
+                font-weight: 400; }
+              header .banner-bar .banner-bar-content .banner-image .banner-style3 .banner-image-content a p {
+                font-size: 20px;
+                line-height: 50px; }
+              header .banner-bar .banner-bar-content .banner-image .banner-style3 .banner-image-content a button {
+                outline: none;
+                color: #fff;
+                border: 1px solid #fff;
+                font-size: 16px;
+                width: 118px;
+                height: 34px;
+                background: transparent;
+                margin-top: 30px;
+                transition: 0.3s; }
+              header .banner-bar .banner-bar-content .banner-image .banner-style3 .banner-image-content a button:hover {
+                background-color: #fff;
+                color: black; }
+          header .banner-bar .banner-bar-content .banner-image .banner-style3 .banner-image-detail a {
+            position: absolute; }
+            header .banner-bar .banner-bar-content .banner-image .banner-style3 .banner-image-detail a img {
+              position: absolute;
+              top: 61px;
+              left: 550px;
+              width: 800px;
+              height: 440px;
+              transition: 0.8s; }
+      header .banner-bar .banner-bar-content .banner-point {
+        position: absolute;
+        top: 527px;
+        left: 50%;
+        margin-left: -38px;
+        z-index: 4; }
+        header .banner-bar .banner-bar-content .banner-point dd {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          float: left;
+          margin: 0 5px;
+          cursor: pointer;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          transition: 0.3s; }
+          header .banner-bar .banner-bar-content .banner-point dd canvas {
+            transform: rotateZ(90deg) rotateY(180deg); }
+  header .bottom-bar {
+    top: 560px;
+    z-index: 9;
+    background-color: rgba(255, 255, 255, 0.05); }
+    header .bottom-bar .bottom-bar-content {
+      height: 130px; }
+      header .bottom-bar .bottom-bar-content ul {
+        width: 1200px;
+        height: 130px;
+        margin: 0 auto;
+        border-right: 1px solid rgba(255, 255, 255, 0.1); }
+        header .bottom-bar .bottom-bar-content ul li {
+          border-left: 1px solid rgba(255, 255, 255, 0.1);
+          float: left; }
+          header .bottom-bar .bottom-bar-content ul li a {
+            width: 239px;
+            height: 130px;
+            display: block;
+            position: relative;
+            transition: 0.4s; }
+            header .bottom-bar .bottom-bar-content ul li a img {
+              position: absolute;
+              left: 20px;
+              top: 42px;
+              width: 32px; }
+            header .bottom-bar .bottom-bar-content ul li a h2 {
+              height: 18px;
+              font-size: 16px;
+              position: absolute;
+              left: 69px;
+              top: 42px; }
+            header .bottom-bar .bottom-bar-content ul li a p {
+              font-size: 14px;
+              line-height: 14px;
+              color: rgba(255, 255, 255, 0.5);
+              position: absolute;
+              left: 69px;
+              top: 74px; }
+          header .bottom-bar .bottom-bar-content ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.1); }
+          header .bottom-bar .bottom-bar-content ul li a:hover p {
+            color: white; }
+
+/*# sourceMappingURL=header.css.map */
